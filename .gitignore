@@ -1,0 +1,12 @@
+/vendor/
+/config.php
+
+*.log
+.env
+.DS_Store
+Thumbs.db
+
+/debug_*.php
+/tmp_*.php
+/.php-server.pid
+/*.zip
