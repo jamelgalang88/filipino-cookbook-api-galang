@@ -45,13 +45,13 @@ A secured PHP Slim API for browsing Filipino foods, categories, origins, and ing
 6. Start Apache and MySQL in XAMPP, or run the built-in PHP server:
 
    ```bash
-   php -S 127.0.0.1:8087 -t public
+   php -S localhost:8000 -t public
    ```
 
 7. Test the API health endpoint:
 
    ```bash
-   curl http://127.0.0.1:8087/health
+   https://localhost:8000/api/health
    ```
 
 ## Authentication
