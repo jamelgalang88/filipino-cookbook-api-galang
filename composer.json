@@ -1,0 +1,9 @@
+{
+    "name": "student/filipino-cookbook-api",
+    "description": "A secured Filipino Cookbook API built with Slim PHP.",
+    "license": "MIT",
+    "require": {
+        "slim/slim": "^4.15",
+        "slim/psr7": "^1.8"
+    }
+}
