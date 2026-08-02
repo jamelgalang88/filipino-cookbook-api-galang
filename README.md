@@ -643,15 +643,6 @@ Recommended additional evidence before final submission:
 - Screenshot of `/api/foods/9999` showing `404 Food not found`.
 - Screenshot of `/health` showing the API server is running.
 
-## Security Notes
-
-- Do not upload `config.php`.
-- Do not upload real database passwords.
-- Do not upload private API keys or personal access tokens.
-- Do not upload private server credentials.
-- Upload `config.example.php` only as a safe configuration template.
-- `vendor/` is ignored because dependencies are installed with `composer install`.
-
 ## Developer Information
 
 | Field | Details |
