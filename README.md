@@ -614,25 +614,31 @@ Screenshots are saved in:
 docs/screenshots/
 ```
 
-| Screenshot | Caption |
-| --- | --- |
-| `docs/screenshots/api-test.png` | Successful authenticated request to `/api/test` |
-| `docs/screenshots/api-foods.png` | Successful request to `/api/foods` returning food records |
-| `docs/screenshots/api-foods-1.png` | Successful request to `/api/foods/1` returning one food |
-| `docs/screenshots/api-categories.png` | Successful request to `/api/categories` returning category records |
-| `docs/screenshots/api-origins.png` | Successful request to `/api/origins` returning origin records |
-| `docs/screenshots/api-ingredients.png` | Successful request to `/api/ingredients` returning ingredient records |
+## Screenshots of Successful Testing
 
-### Sample Screenshot Links
+*Retrieve All Foods:*
 
 ![Successful foods endpoint](docs/screenshots/api-foods.png)
 
+*Retrieve a Single Food:*
+
+![Successful single food endpoint](docs/screenshots/api-foods-1.png)
+
+*Retrieve Categories:*
+
 ![Successful categories endpoint](docs/screenshots/api-categories.png)
+
+*Retrieve Ingredients:*
+
+![Successful ingredients endpoint](docs/screenshots/api-ingredients.png)
+
+*Retrieve Origins:*
 
 ![Successful origins endpoint](docs/screenshots/api-origins.png)
 
 Recommended additional evidence before final submission:
 
+- Screenshot of `/api/test` showing a successful authenticated request (`api-test.png`).
 - Screenshot of `/api/foods` with missing or invalid token showing `401 Unauthorized`.
 - Screenshot of `/api/foods/9999` showing `404 Food not found`.
 - Screenshot of `/health` showing the API server is running.
@@ -655,25 +661,3 @@ Recommended additional evidence before final submission:
 | GitHub Username | [jamelgalang88] |
 | Repository Link | https://github.com/jamelgalang88/filipino-cookbook-api-galang/tree/main |
 | Date Completed | July 30, 2026 |
-
-## Quick Troubleshooting
-
-If `vendor/autoload.php` is missing, run:
-
-```bash
-composer install
-```
-
-If `/api/foods` returns `401 Unauthorized`, check that the Thunder Client header is:
-
-```text
-Authorization: Bearer YOUR_ACCESS_TOKEN
-```
-
-and `config.php` contains only:
-
-```php
-'api_token' => 'YOUR_ACCESS_TOKEN',
-```
-
-If `/api/foods` returns `503 Database connection is unavailable`, check that MySQL is running, `database.sql` was imported, and the `config.php` database username and password are correct.
