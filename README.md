@@ -636,12 +636,21 @@ docs/screenshots/
 
 ![Successful origins endpoint](docs/screenshots/api-origins.png)
 
-Recommended additional evidence before final submission:
+*Authenticated Test Endpoint:*
 
-- Screenshot of `/api/test` showing a successful authenticated request (`api-test.png`).
-- Screenshot of `/api/foods` with missing or invalid token showing `401 Unauthorized`.
-- Screenshot of `/api/foods/9999` showing `404 Food not found`.
-- Screenshot of `/health` showing the API server is running.
+![Successful test endpoint](docs/screenshots/api-test.png)
+
+*Unauthorized Access (Invalid Token):*
+
+![Unauthorized request](docs/screenshots/unauthorized-401.png)
+
+*Food Not Found:*
+
+![Food not found](docs/screenshots/food-not-found-404.png)
+
+*Health Check:*
+
+![Health check](docs/screenshots/health-check.png)
 
 ## Developer Information
 
