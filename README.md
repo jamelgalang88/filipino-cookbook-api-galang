@@ -661,3 +661,5 @@ docs/screenshots/
 | GitHub Username | [jamelgalang88] |
 | Repository Link | https://github.com/jamelgalang88/filipino-cookbook-api-galang/tree/main |
 | Date Completed | July 30, 2026 |
+
+Testing git practice
